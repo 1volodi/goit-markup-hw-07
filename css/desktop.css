@@ -1,0 +1,118 @@
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    max-width: 1158px;
+  }
+
+  /* .conteiner.conteiner-mini {
+    max-width: 1158px;
+  } */
+  .address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  }
+  
+  /* =========hero-desktop========= */
+  .hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  }
+  .btn-hero {
+    margin-top: 48px;
+  }
+  /* =========hero-desktop/========= */
+
+  /* =======features-desktop======= */
+  .features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .features-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .features-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .features-item {
+    flex-basis: calc((100% - 24px) / 4); 
+  }
+  .features-icon {
+    display: block;
+    height: 64px;
+    width: 64px;
+  }
+  .features-item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    background-color: 
+    var(--background-color-our-team);
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  /* =======features-desktop/======= */
+
+  /* =======what-are-desktop======= */
+  .what-are {
+  display: block;
+  }
+  /* =======what-are-desktop/======= */
+
+  /* ==========team-desktop========= */
+  .team-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  }
+  .team-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+  }
+  .team-item {
+    flex-basis: calc((100% - 24px) / 4); 
+  }
+  /* ==========team-desktop========= */
+
+  /* =======customers-desktop======= */
+
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .coustomers-list {
+    display: flex;
+    gap: 24px;
+  }
+  .coustomers-items {
+    flex-basis: calc((100% - 5 * 24px) / 6);
+    height: 88px;
+  }
+  /* =======customers-desktop/======= */
+
+  /* ==========footer-desktop========= */
+  .footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-div {
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 0;
+  align-items: normal;
+}
+.footer-text-social {
+  margin-left: 120px;
+}
+.footer-subscribe-form {
+  margin-left: 80px;
+}
+.footer-form {
+  gap: 24px;
+}
+  /* ==========footer-desktop/========= */
+}
