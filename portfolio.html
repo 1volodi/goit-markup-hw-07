@@ -14,7 +14,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/mobile.css"/>
+    <link rel="stylesheet" href="./css/tablet.css"/>
+    <link rel="stylesheet" href="./css/desktop.css"/>
   </head>
   <!-- =========header========= -->
   <body>
@@ -41,6 +44,78 @@
             </li>
           </ul>
         </address>
+        <!-- =======mob-menu====== -->
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-menu-open-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-hamburger">
+            </use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu" data-menu>
+        <div class="mob-conteiner">
+          <div>
+            <button type="button" class="mobile-menu-close" data-menu-close>
+              <svg class="mobile-menu-close-icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-close-modal">
+                </use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="mob-menu-list list">
+                  <li class="mob-menu-item"><a class="mob-menu-link link" href="./index.html">Studio</a></li>
+                  <li class="mob-menu-item"><a class="mob-menu-link link" href="./portfolio.html">Portfolio</a></li>
+                  <li class="mob-menu-item"><a class="mob-menu-link link" href="#">Contacts</a></li>
+                </ul>
+            </nav>
+          </div>
+          <div class="mob-soc-wrab">
+            <address class="mob-address">
+              <ul class="mob-address-list list">
+                <li class="mob-tel-item">
+                  <a class="mob-tel-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+                <li class="mob-mail-item">
+                  <a class="mob-mail-link link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="mob-soc">
+              <ul class="mob-soc-list list">
+                <li class="mob-soc-item link">
+                  <a class="mob-soc-list-link" href="#">
+                    <svg class="mob-soc-icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-soc-item link">
+                  <a class="mob-soc-list-link" href="#">
+                    <svg class="mob-soc-icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-soc-item link">
+                  <a class="mob-soc-list-link" href="#">
+                    <svg class="mob-soc-icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-soc-item link">
+                  <a class="mob-soc-list-link" href="#">
+                    <svg class="mob-soc-icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -86,8 +161,8 @@
                   </p>
                 </div>
                 <div class="flex-element-text">
-                  <h3 class="features-title">Banking App Interface Concept</h3>
-                  <p class="text-features">App</p>
+                  <h3 class="features-title-portfolio">Banking App Interface Concept</h3>
+                  <p class="features-text-portfolio">App</p>
                 </div>
               </a>
             </li>
@@ -119,8 +194,8 @@
                   </p>
                 </div>
                 <div class="flex-element-text">
-                  <h3 class="features-title">Cashless Payment</h3>
-                  <p class="text-features">Marketing</p>
+                  <h3 class="features-title-portfolio">Cashless Payment</h3>
+                  <p class="features-text-portfolio">Marketing</p>
                 </div>
               </a>
             </li>
@@ -152,8 +227,8 @@
                   </p>
                 </div>
                 <div class="flex-element-text">
-                  <h3 class="features-title">Meditaion App</h3>
-                  <p class="text-features">App</p>
+                  <h3 class="features-title-portfolio">Meditaion App</h3>
+                  <p class="features-text-portfolio">App</p>
                 </div>
               </a>
             </li>
@@ -185,8 +260,8 @@
                   </p>
                 </div>
                 <div class="flex-element-text">
-                  <h3 class="features-title">Taxi Service</h3>
-                  <p class="text-features">Marketing</p>
+                  <h3 class="features-title-portfolio">Taxi Service</h3>
+                  <p class="features-text-portfolio">Marketing</p>
                 </div>
               </a>
             </li>
@@ -218,8 +293,8 @@
                   </p>
                 </div>
                 <div class="flex-element-text">
-                  <h3 class="features-title">Screen Illustrations</h3>
-                  <p class="text-features">Design</p>
+                  <h3 class="features-title-portfolio">Screen Illustrations</h3>
+                  <p class="features-text-portfolio">Design</p>
                 </div>
               </a>
             </li>
@@ -251,8 +326,8 @@
                   </p>
                 </div>
                 <div class="flex-element-text">
-                  <h3 class="features-title">Online Courses</h3>
-                  <p class="text-features">Marketing</p>
+                  <h3 class="features-title-portfolio">Online Courses</h3>
+                  <p class="features-text-portfolio">Marketing</p>
                 </div>
               </a>
             </li>
@@ -284,8 +359,8 @@
                   </p>
                 </div>
                 <div class="flex-element-text">
-                  <h3 class="features-title">Instagram Stories Concept</h3>
-                  <p class="text-features">Design</p>
+                  <h3 class="features-title-portfolio">Instagram Stories Concept</h3>
+                  <p class="features-text-portfolio">Design</p>
                 </div>
               </a>
             </li>
@@ -317,8 +392,8 @@
                   </p>
                 </div>
                 <div class="flex-element-text">
-                  <h3 class="features-title">Organic Food</h3>
-                  <p class="text-features">Web Site</p>
+                  <h3 class="features-title-portfolio">Organic Food</h3>
+                  <p class="features-text-portfolio">Web Site</p>
                 </div>
               </a>
             </li>
@@ -350,8 +425,8 @@
                   </p>
                 </div>
                 <div class="flex-element-text">
-                  <h3 class="features-title">Fresh Coffee</h3>
-                  <p class="text-features">Web Site</p>
+                  <h3 class="features-title-portfolio">Fresh Coffee</h3>
+                  <p class="features-text-portfolio">Web Site</p>
                 </div>
               </a>
             </li>
@@ -425,7 +500,61 @@
         </div>
       </div>
     </footer>
+    <!-- ========modal-window======= -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-btn-icon">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <label class="modal-form-field">
+            <span class="modal-form-desc">Name</span>
+            <span class="modal-input-wrapper">
+              <input type="text" name="user_name" class="modal-form-input" placeholder=" " required pattern="[a-zA-zа-яА-Я]+" minlength="2">
+              <svg class="modal-input-icon">
+                    <use href="./images/icons.svg#icon-person"></use>
+                  </svg>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-desc">Phone</span>
+            <span class="modal-input-wrapper">
+              <input type="tel" name="user_phone" class="modal-form-input" placeholder=" " required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
+              <svg class="modal-input-icon">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-desc">Email</span>
+            <span class="modal-input-wrapper">
+              <input type="email" name="user_email" class="modal-form-input" placeholder=" " 
+              required title="user@email">
+              <svg class="modal-input-icon">
+                    <use href="./images/icons.svg#icon-email"></use>
+                  </svg>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-desc">Comment</span>
+            <textarea name="user_message" class="modal-form-message" placeholder="Text input"></textarea>
+          </label>
+          <input id="user-policy" type="checkbox" name="user_policy" class="modal-form-check visually-hidden" required>
+          <label for="user-policy" class="modal-form-check-desk">
+            <span>
+              <svg class="form-check-icon" width="10" height="8">
+                    <use href="./images/icons.svg#icon-vector"></use>
+                  </svg>
+                </span>
+            I accept the terms and conditions of the&nbsp;<a href="">Privacy Policy</a></label>
+          <button type="submit" class="modal-form-submit">Send</button>
+        </form>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -114,6 +114,7 @@ img {
   padding: 0;
   margin-top: 24px;
   margin-bottom: 24px;
+  border: none;
 }
 .mobile-menu-close {
   position: absolute;
@@ -260,13 +261,6 @@ img {
   url(../images/hero-image@2x-mob.jpg);
   }
 }
-/* .hero-wrap {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 112px;
-  padding-bottom: 112px;
-} */
 .hero-title {
   font-size: 36px;
   line-height: 1.11;
@@ -476,7 +470,7 @@ img {
   border-color: var(--accent-active-color);
 }
 
-/* =====footer===== */
+/* =========footer======= */
 .footer {
   background-color: 
   var(--background-color-hero);
@@ -621,23 +615,10 @@ img {
   background-color: var(--link-hover);
 }
 
-
-.btn-hero:is(:hover, :focus) {
-}
-
-
-
-
-
-
-
-
-
-
-/* =====portfolio===== */
+/* =========portfolio======== */
 .portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .filter-btn {
   background-color: var(--background-color-our-team);
@@ -652,7 +633,7 @@ img {
   border-width: 1px;
   border-radius: 4px;
   cursor: pointer;
-  padding: 12px 24px;
+  padding: 8px 16px;
   transition: background-color var(--hover-effect),
   box-shadow var(--hover-effect);
 }
@@ -666,10 +647,26 @@ img {
 .button-portfolio-list {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: normal;
+  flex-wrap: wrap;
+  row-gap: 16px;
 }
 .button-portfolio-item:not(:last-child) {
   margin-right: 24px;
+}
+.features-title-portfolio {
+  color: var(--color-primary);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.features-text-portfolio {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-text-features);
 }
 .overlay {
   position: absolute;
@@ -706,13 +703,9 @@ img {
 }
 .flex-conteiner {
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 48px;
-  column-gap: 24px;
-  margin-top: 72px;
-}
-.flex-element {
-  flex-basis: calc((100% - 48px) / 3);
+  row-gap: 24px;
+  margin-top: 48px;
+  flex-direction: column;
 }
 .flex-element-text {
   border-color: var(--color-text-footer);
@@ -723,6 +716,7 @@ img {
   padding-left: 16px;
   padding-top: 32px;
 }
+
 /* ========modal-window======== */
 .backdrop {
   position: fixed;
