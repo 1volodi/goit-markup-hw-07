@@ -3,7 +3,7 @@
     max-width: 428px;
   }
 
-  /* =========hero========= */
+  /* =========hero-mob========= */
   .hero {
   background-image: var(--gra), url(../images/hero-image-tab.jpg);
   }
@@ -16,5 +16,9 @@
   }
  }
 
-
+  /* ========modal-window-mob======== */
+  .modal {
+  min-width: 392px;
+}
+  /* ========modal-window-mob/======== */
 }

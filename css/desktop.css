@@ -7,6 +7,14 @@
   .hero {
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: var(--gra), url(../images/hero-image.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--gra), url(../images/hero-image@2x.jpg);
+    }
   }
   .btn-hero {
     margin-top: 48px;
@@ -18,7 +26,7 @@
   }
   /* =========hero-desktop/========= */
 
-  /* =======features-desktop======= */
+  /* ========features-desktop======= */
   .features {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -112,7 +120,7 @@
 }
   /* ==========footer-desktop/========= */
 
-  /* =====portfolio-desktop===== */
+  /* =========portfolio-desktop===== */
 .portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
@@ -155,4 +163,22 @@
   padding-top: 32px;
 }
 /* =====portfolio-desktop/===== */
+
+/* ========modal-window======== */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleY(1) rotate(0);
+  width: 408px;
+  min-height: 576px;
+  background-color: var(--background-modal-color);
+  border-radius: 4px;
+  padding: 72px 24px 24px 24px;
+  transition: transform var(--hover-effect);
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleY(0) rotate(-45deg);
+}
+/* ========modal-window/======== */
 }
